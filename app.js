@@ -24,11 +24,9 @@ const i18n = {
         "home_sub": "为您精选全网最热中西名菜",
         "search_place": "如搜索 '牛排', 'fish'...",
         "chip_all": "全部 All",
-        "chip_sichuan": "辣风 Sichuan",
-        "chip_yue": "经典粤 Yue",
-        "chip_lu": "其他名菜 Chinese Other",
-        "chip_italian": "意式 Italian",
-        "chip_french": "法餐 French",
+        "chip_italian": "意大利菜 Italian",
+        "chip_french": "法国菜 French",
+        "chip_chinese": "中华名菜 Chinese Masterpieces",
         "bot_nav_recipes": "菜谱",
         "bot_nav_cart": "购物清单",
         "min": "分钟",
@@ -60,11 +58,9 @@ const i18n = {
         "home_sub": "Top structured recipes worldwide",
         "search_place": "Search 'steak', 'tofu'...",
         "chip_all": "All",
-        "chip_sichuan": "Sichuan",
-        "chip_yue": "Cantonese",
-        "chip_lu": "Other Chinese",
         "chip_italian": "Italian",
         "chip_french": "French",
+        "chip_chinese": "Chinese Masterpieces",
         "bot_nav_recipes": "Recipes",
         "bot_nav_cart": "Grocery List",
         "min": "mins",
@@ -121,12 +117,14 @@ function renderAppStrings() {
     document.getElementById('txt-home-subtitle').innerText = t('home_sub');
     document.getElementById('recipe-search').placeholder = t('search_place');
 
-    document.querySelector('.chip[data-cat="all"]').innerText = t('chip_all');
-    document.querySelector('.chip[data-cat="sichuan"]').innerText = t('chip_sichuan');
-    document.querySelector('.chip[data-cat="yue"]').innerText = t('chip_yue');
-    document.querySelector('.chip[data-cat="lu"]').innerText = t('chip_lu');
-    document.querySelector('.chip[data-cat="italian"]').innerText = t('chip_italian');
-    document.querySelector('.chip[data-cat="french"]').innerText = t('chip_french');
+    const chipAll = document.querySelector('.chip[data-cat="all"]');
+    if (chipAll) chipAll.childNodes[0].nodeValue = t('chip_all') + " ";
+    const chipItalian = document.querySelector('.chip[data-cat="italian"]');
+    if (chipItalian) chipItalian.childNodes[0].nodeValue = t('chip_italian') + " ";
+    const chipFrench = document.querySelector('.chip[data-cat="french"]');
+    if (chipFrench) chipFrench.childNodes[0].nodeValue = t('chip_french') + " ";
+    const chipChinese = document.querySelector('.chip[data-cat="chinese"]');
+    if (chipChinese) chipChinese.childNodes[0].nodeValue = t('chip_chinese') + " ";
 
     document.querySelector('#nav-home span').innerText = t('bot_nav_recipes');
     document.querySelector('#nav-cart span').innerText = t('bot_nav_cart');
@@ -163,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('nav-cart').addEventListener('click', () => switchScreen('cart'));
 
     renderAppStrings();
+    updateCategoryCounts();
     renderCart();
 });
 
@@ -211,6 +210,24 @@ function switchScreen(screenId) {
     if (screenId === 'cart') document.getElementById('nav-cart').classList.add('active');
 }
 
+function updateCategoryCounts() {
+    const counts = { all: 0, italian: 0, french: 0, chinese: 0 };
+    recipesData_v2.forEach(r => {
+        counts.all++;
+        if (r.cuisine === 'italian') counts.italian++;
+        else if (r.cuisine === 'french') counts.french++;
+        else counts.chinese++;
+    });
+    const cAll = document.getElementById('count-all');
+    if (cAll) cAll.innerText = `(${counts.all})`;
+    const cIt = document.getElementById('count-italian');
+    if (cIt) cIt.innerText = `(${counts.italian})`;
+    const cFr = document.getElementById('count-french');
+    if (cFr) cFr.innerText = `(${counts.french})`;
+    const cCh = document.getElementById('count-chinese');
+    if (cCh) cCh.innerText = `(${counts.chinese})`;
+}
+
 function renderHome() {
     const grid = document.getElementById('recipe-grid');
     grid.innerHTML = '';
@@ -218,8 +235,8 @@ function renderHome() {
     let filtered = recipesData_v2; // From updated recipes.js
 
     if (currentCategory !== 'all') {
-        if (currentCategory === 'lu') {
-            filtered = filtered.filter(r => r.cuisine !== 'italian' && r.cuisine !== 'french' && r.cuisine !== 'yue' && r.cuisine !== 'sichuan');
+        if (currentCategory === 'chinese') {
+            filtered = filtered.filter(r => r.cuisine !== 'italian' && r.cuisine !== 'french');
         } else {
             filtered = filtered.filter(r => r.cuisine === currentCategory);
         }

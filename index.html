@@ -68,12 +68,10 @@
 
                 <!-- Category Chips -->
                 <div class="category-chips" id="category-chips">
-                    <div class="chip active" onclick="filterCategory('all', this)" data-cat="all">全部 All</div>
-                    <div class="chip" onclick="filterCategory('sichuan', this)" data-cat="sichuan">辣风 Sichuan</div>
-                    <div class="chip" onclick="filterCategory('yue', this)" data-cat="yue">经典粤 Yue</div>
-                    <div class="chip" onclick="filterCategory('lu', this)" data-cat="lu">中华名菜 Lu/Other</div>
-                    <div class="chip" onclick="filterCategory('italian', this)" data-cat="italian">意式 Italian</div>
-                    <div class="chip" onclick="filterCategory('french', this)" data-cat="french">法式 French</div>
+                    <div class="chip active" onclick="filterCategory('all', this)" data-cat="all">全部 All <span id="count-all"></span></div>
+                    <div class="chip" onclick="filterCategory('italian', this)" data-cat="italian">意大利菜 Italian <span id="count-italian"></span></div>
+                    <div class="chip" onclick="filterCategory('french', this)" data-cat="french">法国菜 French <span id="count-french"></span></div>
+                    <div class="chip" onclick="filterCategory('chinese', this)" data-cat="chinese">中华名菜 Chinese <span id="count-chinese"></span></div>
                 </div>
             </div>
             <div class="recipe-grid" id="recipe-grid" style="margin-top: 10px;">
