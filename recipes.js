@@ -4,7 +4,7 @@ const recipesData = [
     "name": "经典红烧肉 (中式)",
     "time": 60,
     "difficulty": "中级",
-    "image": "https://images.unsplash.com/photo-1544025162-811c761ccfc2?w=800&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hong_Shao_Rou_%28Red_Braised_Pork%29.jpg/800px-Hong_Shao_Rou_%28Red_Braised_Pork%29.jpg",
     "ingredients": [
       {
         "name": "五花肉",
