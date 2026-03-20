@@ -222,6 +222,14 @@ function closeNavigation() {
     }
 }
 
+function closeNavigationToHome() {
+    if (confirm('确定要放弃当前的烹饪进度并返回主页吗？')) {
+        clearInterval(timerInterval);
+        document.getElementById('nav-screen').classList.remove('active');
+        switchScreen('home');
+    }
+}
+
 const actionIcons = {
     "cut": { icon: "🔪", anim: "anim-cut" },
     "fry": { icon: "🍳", anim: "anim-fry" },
