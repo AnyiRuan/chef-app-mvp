@@ -145,7 +145,7 @@ data = [
 for d in data:
     add_r(d[0], d[1], d[2], d[3], d[4], d[5], d[6], d[7], d[8], 
         [ {"name_zh":i.split(":")[0], "name_en":i.split(":")[1], "amount":i.split(":")[2]} for i in d[9].split("|") ],
-        [ {"action":s.split(":")[0], "instruction_zh":s.split(":")[1], "instruction_en":s.split(":")[2], "hasTimer":int(s.split(":")[3])>0, "timeSeconds":int(s.split(":")[3])} for s in d[10].split("|") ]
+        [ {"action":s.split(":")[0], "instruction_zh":s.split(":")[1], "instruction_en":s.split(":", 2)[2].rsplit(":", 1)[0], "hasTimer":int(s.rsplit(":", 1)[1])>0, "timeSeconds":int(s.rsplit(":", 1)[1])} for s in d[10].split("|") ]
     )
 
 with open("recipes.js", "w", encoding="utf-8") as f:
