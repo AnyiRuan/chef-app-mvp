@@ -216,18 +216,14 @@ function startNavigation() {
 }
 
 function closeNavigation() {
-    if (confirm('即将退出烹饪导航，确定吗？')) {
-        clearInterval(timerInterval);
-        document.getElementById('nav-screen').classList.remove('active');
-    }
+    clearInterval(timerInterval);
+    document.getElementById('nav-screen').classList.remove('active');
 }
 
 function closeNavigationToHome() {
-    if (confirm('确定要放弃当前的烹饪进度并返回主页吗？')) {
-        clearInterval(timerInterval);
-        document.getElementById('nav-screen').classList.remove('active');
-        switchScreen('home');
-    }
+    clearInterval(timerInterval);
+    document.getElementById('nav-screen').classList.remove('active');
+    switchScreen('home');
 }
 
 const actionIcons = {
