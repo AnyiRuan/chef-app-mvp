@@ -74,7 +74,7 @@ const recipesData_v2 = [
     "time": 90,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/bolognese.png",
     "ingredients": [
       {
         "name_zh": "牛肉糜",
@@ -136,7 +136,7 @@ const recipesData_v2 = [
     "time": 10,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/aglio_e_olio.png",
     "ingredients": [
       {
         "name_zh": "意面",
@@ -319,7 +319,7 @@ const recipesData_v2 = [
     "time": 35,
     "difficulty_zh": "高级",
     "difficulty_en": "Hard",
-    "image": "./images/generic_food.png",
+    "image": "./images/risotto.png",
     "ingredients": [
       {
         "name_zh": "意大利米(Arborio)",
@@ -381,7 +381,7 @@ const recipesData_v2 = [
     "time": 90,
     "difficulty_zh": "高级",
     "difficulty_en": "Hard",
-    "image": "./images/generic_food.png",
+    "image": "./images/bolognese.png",
     "ingredients": [
       {
         "name_zh": "千层饼皮",
@@ -442,7 +442,7 @@ const recipesData_v2 = [
     "time": 15,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/pizza.png",
     "ingredients": [
       {
         "name_zh": "法棍/乡村包",
@@ -557,7 +557,7 @@ const recipesData_v2 = [
     "time": 40,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/french_onion_soup.png",
     "ingredients": [
       {
         "name_zh": "杂菜(胡萝卜西葫芦土豆)",
@@ -679,7 +679,7 @@ const recipesData_v2 = [
     "time": 50,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/salad.png",
     "ingredients": [
       {
         "name_zh": "西葫芦茄子大番茄",
@@ -741,7 +741,7 @@ const recipesData_v2 = [
     "time": 180,
     "difficulty_zh": "高级",
     "difficulty_en": "Hard",
-    "image": "./images/generic_food.png",
+    "image": "./images/lions_head.png",
     "ingredients": [
       {
         "name_zh": "牛腱肉",
@@ -802,7 +802,7 @@ const recipesData_v2 = [
     "time": 40,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/risotto.png",
     "ingredients": [
       {
         "name_zh": "鸡腿块",
@@ -864,7 +864,7 @@ const recipesData_v2 = [
     "time": 60,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/pizza.png",
     "ingredients": [
       {
         "name_zh": "法式酥皮底",
@@ -925,7 +925,7 @@ const recipesData_v2 = [
     "time": 15,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/tiramisu.png",
     "ingredients": [
       {
         "name_zh": "低筋面粉",
@@ -991,7 +991,7 @@ const recipesData_v2 = [
     "time": 15,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/salad.png",
     "ingredients": [
       {
         "name_zh": "吞拿鱼罐头",
@@ -1053,7 +1053,7 @@ const recipesData_v2 = [
     "time": 30,
     "difficulty_zh": "高级",
     "difficulty_en": "Hard",
-    "image": "./images/generic_food.png",
+    "image": "./images/sirloin_steak.png",
     "ingredients": [
       {
         "name_zh": "鸭胸肉",
@@ -1114,7 +1114,7 @@ const recipesData_v2 = [
     "time": 45,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/tiramisu.png",
     "ingredients": [
       {
         "name_zh": "新鲜黑樱桃",
@@ -1175,7 +1175,7 @@ const recipesData_v2 = [
     "time": 20,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/pizza.png",
     "ingredients": [
       {
         "name_zh": "厚切吐司",
@@ -1358,7 +1358,7 @@ const recipesData_v2 = [
     "time": 30,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/mapo_tofu.png",
     "ingredients": [
       {
         "name_zh": "猪里脊",
@@ -1419,7 +1419,7 @@ const recipesData_v2 = [
     "time": 25,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/kung_pao_chicken.png",
     "ingredients": [
       {
         "name_zh": "二刀肉(肥瘦分明)",
@@ -1480,7 +1480,7 @@ const recipesData_v2 = [
     "time": 15,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/kung_pao_chicken.png",
     "ingredients": [
       {
         "name_zh": "前腿肉",
@@ -1663,7 +1663,7 @@ const recipesData_v2 = [
     "time": 180,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/sweet_sour_pork.png",
     "ingredients": [
       {
         "name_zh": "梅花肉",
@@ -1724,7 +1724,7 @@ const recipesData_v2 = [
     "time": 10,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/steamed_sea_bass.png",
     "ingredients": [
       {
         "name_zh": "鲜活大虾",
@@ -1785,7 +1785,7 @@ const recipesData_v2 = [
     "time": 10,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/risotto.png",
     "ingredients": [
       {
         "name_zh": "大青虾仁",
@@ -1846,7 +1846,7 @@ const recipesData_v2 = [
     "time": 30,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/sweet_sour_pork.png",
     "ingredients": [
       {
         "name_zh": "通脊肉",
@@ -1907,7 +1907,7 @@ const recipesData_v2 = [
     "time": 10,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/kung_pao_chicken.png",
     "ingredients": [
       {
         "name_zh": "羊后腿肉或羊肉片",
@@ -2029,7 +2029,7 @@ const recipesData_v2 = [
     "time": 45,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/noodles.png",
     "ingredients": [
       {
         "name_zh": "干黄酱与甜面酱",
@@ -2090,7 +2090,7 @@ const recipesData_v2 = [
     "time": 15,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/kung_pao_chicken.png",
     "ingredients": [
       {
         "name_zh": "里脊肉片",
@@ -2212,7 +2212,7 @@ const recipesData_v2 = [
     "time": 40,
     "difficulty_zh": "高级",
     "difficulty_en": "Hard",
-    "image": "./images/generic_food.png",
+    "image": "./images/sweet_sour_pork.png",
     "ingredients": [
       {
         "name_zh": "整条桂鱼或鲈鱼",
@@ -2273,7 +2273,7 @@ const recipesData_v2 = [
     "time": 40,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/sweet_sour_pork.png",
     "ingredients": [
       {
         "name_zh": "猪肋排",
@@ -2334,7 +2334,7 @@ const recipesData_v2 = [
     "time": 15,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/noodles.png",
     "ingredients": [
       {
         "name_zh": "牛肉泥",
