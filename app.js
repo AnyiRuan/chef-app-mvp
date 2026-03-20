@@ -222,31 +222,31 @@ function closeNavigation() {
     }
 }
 
-const actionImages = {
-    "cut": "https://images.unsplash.com/photo-1593450257008-012520844781?w=400&q=80",
-    "fry": "https://images.unsplash.com/photo-1579372785648-8df0acdc592a?w=400&q=80",
-    "boil": "https://images.unsplash.com/photo-1584268686259-33ad1183556d?w=400&q=80",
-    "mix": "https://images.unsplash.com/photo-1585250106888-2cbac62c64e8?w=400&q=80",
-    "default": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=400&q=80"
+const actionIcons = {
+    "cut": { icon: "🔪", anim: "anim-cut" },
+    "fry": { icon: "🍳", anim: "anim-fry" },
+    "boil": { icon: "🍲", anim: "anim-boil" },
+    "mix": { icon: "🥣", anim: "anim-boil" },
+    "default": { icon: "👨‍🍳", anim: "anim-boil" }
 };
 
 function getActionStyle(actionText) {
-    if (/切|配|备/.test(actionText)) return { img: actionImages.cut, anim: 'anim-cut' };
-    if (/炒|煎|干锅|爆|烧|油/.test(actionText)) return { img: actionImages.fry, anim: 'anim-fry' };
-    if (/煮|炖|汤|沸|蒸/.test(actionText)) return { img: actionImages.boil, anim: 'anim-boil' };
-    if (/拌|匀|调/.test(actionText)) return { img: actionImages.mix, anim: 'anim-boil' };
-    return { img: actionImages.default, anim: 'anim-boil' };
+    if (/切|配|备/.test(actionText)) return actionIcons.cut;
+    if (/炒|煎|干锅|爆|烧|油/.test(actionText)) return actionIcons.fry;
+    if (/煮|炖|汤|沸|蒸/.test(actionText)) return actionIcons.boil;
+    if (/拌|匀|调/.test(actionText)) return actionIcons.mix;
+    return actionIcons.default;
 }
 
 function renderNavStep() {
     const step = selectedRecipe.steps[currentStepIdx];
     const total = selectedRecipe.steps.length;
 
-    // Set Dynamic Image & Animation
+    // Set Dynamic Icon & Animation
     const actionData = getActionStyle(step.action);
-    const imgEl = document.getElementById('nav-step-img');
-    imgEl.src = actionData.img;
-    imgEl.className = actionData.anim; // Apply CSS animation
+    const iconEl = document.getElementById('nav-step-icon');
+    iconEl.innerText = actionData.icon;
+    iconEl.className = `nav-step-icon ${actionData.anim}`;
 
     document.getElementById('nav-step-num').innerText = `Step ${currentStepIdx + 1} / ${total}`;
     document.getElementById('nav-step-action').innerText = step.action;
