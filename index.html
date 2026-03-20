@@ -53,11 +53,29 @@
 
         <!-- 1. Home Screen (Recipe List) -->
         <div id="screen-home" class="screen">
-            <div class="header">
-                <h1>今天想吃什么？</h1>
-                <p>为您精选50道经典入门菜谱</p>
+            <div class="header" style="position:relative; margin-bottom: 20px;">
+                <button id="lang-toggle" onclick="toggleLanguage()" class="lang-toggle-btn">中 / EN</button>
+                <h1 id="txt-home-title">今天想吃什么？</h1>
+                <p id="txt-home-subtitle">为您精选全网顶级中西名菜</p>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="recipe-search" placeholder="输入你想吃的 (e.g. 牛排, fish)..."
+                        oninput="handleSearch()">
+                    <div class="search-icon">🔍</div>
+                </div>
+
+                <!-- Category Chips -->
+                <div class="category-chips" id="category-chips">
+                    <div class="chip active" onclick="filterCategory('all', this)" data-cat="all">全部 All</div>
+                    <div class="chip" onclick="filterCategory('sichuan', this)" data-cat="sichuan">辣风 Sichuan</div>
+                    <div class="chip" onclick="filterCategory('yue', this)" data-cat="yue">经典粤 Yue</div>
+                    <div class="chip" onclick="filterCategory('lu', this)" data-cat="lu">中华名菜 Lu/Other</div>
+                    <div class="chip" onclick="filterCategory('italian', this)" data-cat="italian">意式 Italian</div>
+                    <div class="chip" onclick="filterCategory('french', this)" data-cat="french">法式 French</div>
+                </div>
             </div>
-            <div class="recipe-grid" id="recipe-grid">
+            <div class="recipe-grid" id="recipe-grid" style="margin-top: 10px;">
                 <!-- Rendered via JS -->
             </div>
         </div>
