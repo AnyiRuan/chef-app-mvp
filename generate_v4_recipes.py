@@ -1,5 +1,13 @@
 import json
 
+recipes = []
+def add_r(id_str, n_zh, n_en, cuisine, tags, time, d_zh, d_en, img, ings, steps):
+    recipes.append({
+        "id": id_str, "name_zh": n_zh, "name_en": n_en, "cuisine": cuisine,
+        "tags": tags, "time": time, "difficulty_zh": d_zh, "difficulty_en": d_en,
+        "image": img, "ingredients": ings, "steps": steps
+    })
+
 data = [
     # ================= 1. ITALIAN (10) =================
     ("i01", "培根蛋酱意面", "Classic Carbonara", "italian", ["pasta","cheese","quick"], 15, "入门", "Easy", "./images/spaghetti_carbonara.png",
