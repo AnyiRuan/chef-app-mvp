@@ -128,11 +128,19 @@
         <!-- Cooking Navigation Fullscreen Layer -->
         <div id="nav-screen">
             <div class="nav-top">
-                <div style="color:var(--primary); font-weight:800; font-size:18px;">正在烹饪</div>
+                <div style="color:var(--primary); font-weight:800; font-size:18px;">正在烹饪 <span id="nav-total-time"
+                        style="font-size:13px; color:var(--text-muted); font-weight:normal; margin-left: 10px;"></span>
+                </div>
                 <div class="nav-close" onclick="closeNavigation()">✕</div>
             </div>
 
+            <!-- Progress Timeline -->
+            <div class="nav-progress-bar" id="nav-progress-bar"></div>
+
             <div class="step-card">
+                <!-- Dynamic Action Image -->
+                <img id="nav-step-img" src="" alt="Action Image">
+
                 <div class="step-num" id="nav-step-num">Step 1 / X</div>
                 <h2 class="step-action" id="nav-step-action">Action</h2>
                 <p class="step-desc" id="nav-step-desc">Desc</p>
