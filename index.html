@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>智能厨艺导航 V1.0 - 完整版</title>
+    <title>智能厨艺导航 V1.0</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +14,44 @@
     <div id="app">
         <div class="ambient-bg"></div>
 
-        <!-- 1. Home Screen -->
+        <!-- 0. Welcome Screen -->
+        <div id="screen-welcome" class="screen flex-active"
+            style="padding:0; flex-direction:column; justify-content:flex-end; overflow-y:auto; overflow-x:hidden;">
+            <div class="welcome-bg"></div>
+            <div class="welcome-content" style="padding-top:100px;">
+                <h1 class="welcome-title">智能厨艺导航</h1>
+                <p class="welcome-subtitle" style="margin-bottom: 30px;">告别手忙脚乱的厨房体验</p>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">⏳</div>
+                        <div class="feature-text">
+                            <h4>沉浸式分步导航</h4>
+                            <p>将菜谱拆解为程序化步骤，全程高亮当前动作、倒计时自动响铃，让您只需专注于当下的翻炒。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔀</div>
+                        <div class="feature-text">
+                            <h4>统筹并行微任务</h4>
+                            <p>这道菜炖煮的40分钟里该干嘛？系统会智能提示您在那时顺手加工配菜，像大厨一样高效掌控时间。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛒</div>
+                        <div class="feature-text">
+                            <h4>极简一键采买</h4>
+                            <p>看到想做的菜谱，一键提取并聚合所需调料与肉菜清单。买好菜，不遗漏，再放心进厨房。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="startApp()"
+                    style="margin-top: 40px; font-size: 20px; box-shadow: 0 10px 40px var(--primary-glow)">立即开启美食探索</button>
+            </div>
+        </div>
+
+        <!-- 1. Home Screen (Recipe List) -->
         <div id="screen-home" class="screen">
             <div class="header">
                 <h1>今天想吃什么？</h1>

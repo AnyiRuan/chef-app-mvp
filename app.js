@@ -1,5 +1,5 @@
 // State
-let currentScreen = 'home';
+let currentScreen = 'welcome';
 let selectedRecipe = null;
 let currentStepIdx = 0;
 let timerInterval = null;
@@ -13,12 +13,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Bottom Nav Listeners
     document.getElementById('nav-home').addEventListener('click', () => switchScreen('home'));
     document.getElementById('nav-cart').addEventListener('click', () => switchScreen('cart'));
+
+    // Welcome
+    switchScreen('welcome');
 });
+
+// App Start
+function startApp() {
+    switchScreen('home');
+}
 
 // Routing
 function switchScreen(screenId) {
-    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    document.getElementById(`screen-${screenId}`).classList.add('active');
+    // Hide all screens
+    document.querySelectorAll('.screen').forEach(s => {
+        s.classList.remove('active');
+        s.classList.remove('flex-active');
+    });
+
+    const target = document.getElementById(`screen-${screenId}`);
+    const navBar = document.querySelector('.bottom-nav');
+
+    if (screenId === 'welcome') {
+        target.classList.add('flex-active');
+        navBar.style.display = 'none';
+    } else {
+        target.classList.add('active');
+        navBar.style.display = 'flex';
+    }
 
     document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
     if (document.getElementById(`nav-${screenId}`)) {
@@ -182,6 +204,12 @@ function startNavigation() {
         alert("该菜谱暂无动态步骤数据！");
         return;
     }
+
+    // On starting navigation, we definitely need user interaction to unlock audio
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+
     currentStepIdx = 0;
     document.getElementById('nav-screen').classList.add('active');
     renderNavStep();
@@ -268,11 +296,11 @@ function startTimer(totalSeconds) {
             timeEl.innerText = "00:00";
             timeEl.style.color = "var(--success)";
             circleEl.style.background = `conic-gradient(var(--success) 100%, #222 0)`;
-            playAlertSound(); // 触发滴滴滴报警声
+            playAlertSound();
         }
         remaining--;
     };
 
-    update();
+    update(); // first tick
     timerInterval = setInterval(update, 1000);
 }
