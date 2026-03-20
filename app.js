@@ -11,6 +11,15 @@ let searchQuery = '';
 
 const i18n = {
     zh: {
+        "welcome_title": "M记厨艺导航",
+        "welcome_sub": "告别手忙脚乱的厨房体验",
+        "feat1_title": "沉浸式分步导航",
+        "feat1_desc": "将菜谱拆解为程序化步骤，全程高亮当前动作、倒计时自动响铃，让您只需专注于当下的翻炒。",
+        "feat2_title": "统筹并行微任务",
+        "feat2_desc": "这道菜炖煮的40分钟里该干嘛？系统会智能提示您在那时顺手加工配菜，像大厨一样高效掌控时间。",
+        "feat3_title": "极简一键采买",
+        "feat3_desc": "看到想做的菜谱，一键提取并聚合所需调料与肉菜清单。买好菜，不遗漏，再放心进厨房。",
+        "start_app": "立即开启美食探索",
         "home_title": "今天想吃什么？",
         "home_sub": "为您精选全网最热中西名菜",
         "search_place": "如搜索 '牛排', 'fish'...",
@@ -38,6 +47,15 @@ const i18n = {
         "nav_done": "完成上菜！"
     },
     en: {
+        "welcome_title": "Chef M Navigation",
+        "welcome_sub": "Say goodbye to kitchen chaos",
+        "feat1_title": "Immersive Step-by-Step",
+        "feat1_desc": "Recipes broken down into procedural steps, highlighting current actions and auto-ringing timers.",
+        "feat2_title": "Parallel Micro-Tasks",
+        "feat2_desc": "What to do during a 40-min simmer? The system intelligently prompts you to prep sides like a pro.",
+        "feat3_title": "1-Click Grocery",
+        "feat3_desc": "Extract and aggregate required ingredients with one click. Shop smart, cook with peace of mind.",
+        "start_app": "Start Culinary Journey",
         "home_title": "What to eat today?",
         "home_sub": "Top structured recipes worldwide",
         "search_place": "Search 'steak', 'tofu'...",
@@ -80,6 +98,25 @@ function toggleLanguage() {
 }
 
 function renderAppStrings() {
+    const elWelcomeTitle = document.getElementById('txt-welcome-title');
+    if (elWelcomeTitle) elWelcomeTitle.innerText = t('welcome_title');
+    const elWelcomeSub = document.getElementById('txt-welcome-subtitle');
+    if (elWelcomeSub) elWelcomeSub.innerText = t('welcome_sub');
+    const elFeat1Title = document.getElementById('txt-feat1-title');
+    if (elFeat1Title) elFeat1Title.innerText = t('feat1_title');
+    const elFeat1Desc = document.getElementById('txt-feat1-desc');
+    if (elFeat1Desc) elFeat1Desc.innerText = t('feat1_desc');
+    const elFeat2Title = document.getElementById('txt-feat2-title');
+    if (elFeat2Title) elFeat2Title.innerText = t('feat2_title');
+    const elFeat2Desc = document.getElementById('txt-feat2-desc');
+    if (elFeat2Desc) elFeat2Desc.innerText = t('feat2_desc');
+    const elFeat3Title = document.getElementById('txt-feat3-title');
+    if (elFeat3Title) elFeat3Title.innerText = t('feat3_title');
+    const elFeat3Desc = document.getElementById('txt-feat3-desc');
+    if (elFeat3Desc) elFeat3Desc.innerText = t('feat3_desc');
+    const elStartApp = document.getElementById('btn-start-app');
+    if (elStartApp) elStartApp.innerText = t('start_app');
+
     document.getElementById('txt-home-title').innerText = t('home_title');
     document.getElementById('txt-home-subtitle').innerText = t('home_sub');
     document.getElementById('recipe-search').placeholder = t('search_place');
