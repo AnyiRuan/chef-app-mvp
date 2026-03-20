@@ -197,7 +197,7 @@ const recipesData_v2 = [
     "time": 20,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/pizza.png",
     "ingredients": [
       {
         "name_zh": "披萨面饼",
@@ -258,7 +258,7 @@ const recipesData_v2 = [
     "time": 30,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/tiramisu.png",
     "ingredients": [
       {
         "name_zh": "马斯卡彭干酪",
@@ -503,7 +503,7 @@ const recipesData_v2 = [
     "time": 5,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/salad.png",
     "ingredients": [
       {
         "name_zh": "新鲜水牛奶酪",
@@ -1602,7 +1602,7 @@ const recipesData_v2 = [
     "time": 30,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "./images/generic_food.png",
+    "image": "./images/sweet_sour_pork.png",
     "ingredients": [
       {
         "name_zh": "梅条肉",
@@ -2151,7 +2151,7 @@ const recipesData_v2 = [
     "time": 120,
     "difficulty_zh": "高级",
     "difficulty_en": "Hard",
-    "image": "./images/generic_food.png",
+    "image": "./images/lions_head.png",
     "ingredients": [
       {
         "name_zh": "六分肥四分瘦五花肉",
@@ -2395,7 +2395,7 @@ const recipesData_v2 = [
     "time": 5,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "./images/generic_food.png",
+    "image": "./images/noodles.png",
     "ingredients": [
       {
         "name_zh": "极细挂面或生切面",

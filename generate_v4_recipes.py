@@ -19,10 +19,10 @@ data = [
     ("i03", "蒜香橄榄油意面", "Aglio e Olio", "italian", ["pasta","vegetarian","quick"], 10, "入门", "Easy", "./images/generic_food.png",
      "意面:Spaghetti:200g|初榨橄榄油:Olive Oil:50ml|大蒜与干辣椒:Garlic & Chili:大量",
      "煮面:水烧开加盐煮意面。保留煮面水！:Boil pasta, KEEP pasta water.:450|熬油:冷锅下蒜片橄榄油，极其小火慢煎至微黄。:Slowly fry garlic in cold oil till pale gold.:0|乳化:下干辣椒，马上倒小半碗煮面水与油剧烈乳化。:Add chili, instantly add pasta water to emulsify.:0|裹汁:捞出意面放入锅中猛火翻炒挂汁。:Toss pasta vigorously on high heat to glaze.:0"),
-    ("i04", "平底锅玛格丽特披萨", "Pan Margherita Pizza", "italian", ["pizza","cheese"], 20, "中级", "Medium", "./images/generic_food.png",
+    ("i04", "平底锅玛格丽特披萨", "Pan Margherita Pizza", "italian", ["pizza","cheese"], 20, "中级", "Medium", "./images/pizza.png",
      "披萨面饼:Pizza Dough:1张|新鲜水牛奶酪:Fresh Mozzarella:1球|罗勒与番茄泥:Basil & Tomato:适量",
      "烙饼:极其热的平底锅干烙饼底至焦脆冒泡。:Dry sear dough in extremely hot pan till charred.:180|涂酱:关小火，饼面涂上薄薄的无调味番茄泥。:Lower heat, spread thin tomato paste.:0|铺料:撕上奶酪球，进烤箱最上层最高温炙烤3分钟。:Add mozzarella, broil in oven on max heat 3 mins.:180|点缀:出炉立刻撒上新鲜罗勒叶并淋橄榄油。:Top with fresh basil and olive oil.:0"),
-    ("i05", "提拉米苏", "Tiramisu", "italian", ["dessert","coffee"], 30, "中级", "Medium", "./images/generic_food.png",
+    ("i05", "提拉米苏", "Tiramisu", "italian", ["dessert","coffee"], 30, "中级", "Medium", "./images/tiramisu.png",
      "马斯卡彭干酪:Mascarpone:250g|手指饼干:Ladyfingers:1包|浓缩咖啡与可可粉:Espresso & Cocoa:适量",
      "打发:蛋黄加糖隔水加热打至发白，拌入马斯卡彭。:Whisk yolks with sugar over heat, fold in mascarpone.:0|打发蛋清:蛋清打起泡，分次轻轻混入芝士糊。:Whip egg whites and fold gently into cheese mix.:0|蘸酒:手指饼干快速浸泡冷却的咖啡酒液，铺入模具。:Quickly dip ladyfingers in espresso/liqueur, line dish.:0|冷藏:铺一层糊一层饼干，放冰箱冷藏至少4小时以上。:Layer paste and biscuits, refrigerate 4+ hrs.:14400"),
     ("i06", "蘑菇烩饭", "Mushroom Risotto", "italian", ["rice","vegetarian"], 35, "高级", "Hard", "./images/generic_food.png",
@@ -34,7 +34,7 @@ data = [
     ("i08", "意式番茄罗勒烤面包", "Tomato Bruschetta", "italian", ["appetizer","vegetarian"], 15, "入门", "Easy", "./images/generic_food.png",
      "法棍/乡村包:Baguette:半根|成熟番茄:Ripe Tomatoes:2个|大蒜与罗勒:Garlic & Basil:适量",
      "切丁:番茄切微小的丁，加罗勒碎、橄榄油、盐和黑胡椒拌匀腌制。:Dice tomatoes, mix with basil, oil, salt, pepper.:0|烤包:面包切厚片，烤箱200度烤脆。:Slice bread, toast in oven till crisp.:300|抹蒜:趁热用生蒜瓣的切面疯狂摩擦硬硬的面包表面。:Rub toasted bread vigorously with raw garlic clove.:0|装盘:铺上番茄丁，淋上剩下的汁水即可食用。:Top with tomato mix and juices.:0"),
-    ("i09", "卡普里沙拉", "Caprese Salad", "italian", ["salad","vegetarian"], 5, "入门", "Easy", "./images/generic_food.png",
+    ("i09", "卡普里沙拉", "Caprese Salad", "italian", ["salad","vegetarian"], 5, "入门", "Easy", "./images/salad.png",
      "新鲜水牛奶酪:Fresh Mozzarella:1大球|大番茄:Large Tomatoes:2个|罗勒及黑醋:Basil & Balsamic:适量",
      "切片:将番茄和马苏里拉奶酪切成厚度均匀的圆片。:Slice tomatoes and mozzarella evenly.:0|摆盘:将番茄、奶酪、罗勒叶交替层叠摆放成环形。:Arrange tomato, cheese, basil in an alternating ring.:0|调味:撒海盐黑胡椒，大量淋上优质冷榨橄榄油和浓缩黑醋汁。:Season, drizzle generously with EVOO and balsamic glaze.:0"),
     ("i10", "意式蔬菜汤", "Minestrone Soup", "italian", ["soup","vegetarian"], 40, "中级", "Medium", "./images/generic_food.png",
@@ -94,7 +94,7 @@ data = [
     ("y01", "清蒸鲈鱼", "Steamed Sea Bass", "yue", ["海鲜", "清淡"], 15, "入门", "Easy", "./images/steamed_sea_bass.png",
      "活体鲈鱼:Live Sea Bass:1条约一斤|葱段姜丝:Scallion & Ginger:大量|蒸鱼豉油:Seasoned Soy Sauce:适量",
      "改刀:洗净鱼，背部厚肉处划刀，盘底铺葱段垫高以便热气流通。:Score fish back, prop on scallions in dish for steam flow.:0|大火蒸:水一定是完全沸腾滚开，放入鱼，大火猛蒸8分钟，关火虚蒸2分钟。:Steam on viciously boiling water for 8m, turn off and rest 2m.:480|弃水:极其关键：倒掉盘里所有恶臭蒸发出来的腥水，丢掉旧葱姜！:CRITICAL: Pour off foul fish water from plate, discard old ginger!:0|泼油淋汁:铺上全新的极细葱丝，滚油泼香，最后沿盘边淋上一圈优质蒸鱼豉油。:Top with fresh julienne scallions, pour smoking oil, drizzle soy sauce.:0"),
-    ("y02", "菠萝咕噜肉", "Sweet and Sour Pork", "yue", ["猪肉", "酸甜大王"], 30, "中级", "Medium", "./images/generic_food.png",
+    ("y02", "菠萝咕噜肉", "Sweet and Sour Pork", "yue", ["猪肉", "酸甜大王"], 30, "中级", "Medium", "./images/sweet_sour_pork.png",
      "梅条肉:Pork Collar:300g|菠萝大块:Pineapple:150g|青红菜椒片:Bell Peppers:少许",
      "炸肉块:肉块腌制后裹死干淀粉，油温六成下锅炸熟，八成油温复炸至金黄爆脆响。:Coat marinated pork in dry starch, fry twice until explosive crispy.:420|调酸甜汁:番茄酱、糖、白醋、一点点盐加水搅匀备用。:Mix ketchup, sugar, white vinegar, salt, water.:0|熬芡汁:底油爆香一点蒜茸，倒入酸甜汁大火熬至浓稠起大泡亮晶晶。:Boil sweet and sour sauce until sticky glossy bubbles form.:0|秒出锅:将极脆的炸肉、菠萝、彩椒倒入锅中，离火颠勺五次立刻装盘，维持酥脆口感！:Toss crispy pork/pineapple in hot glaze off-heat instantly to retain crunch.:0"),
     ("y03", "广式蜜汁叉烧", "Cantonese Char Siu", "yue", ["猪肉", "烧腊"], 180, "中级", "Medium", "./images/generic_food.png",
@@ -125,7 +125,7 @@ data = [
      "备料:木耳黄花温水泡发洗净。肉片上薄浆。鸡蛋炒块捞出。:Hydrate fungus/lily. Marinate pork. Scramble eggs softly and remove.:0|滑肉:油锅滑熟猪肉片并捞出备用，动作要快。:Fry pork slices briefly till cooked, remove.:0|爆炒:余油下葱花蒜片爆香，下木耳黄花大翻炒两下（防炸锅）。:Fry aromatics, add wood ear and lily flower tossing intensely.:0|融合:倒回肉片鸡蛋加入鲜脆的黄瓜片（不能炒老），放盐生抽猛火乱炒10秒淋一点香油出锅！:Return eggs/pork, add cucumber slices, season and toss rapidly, drizzle sesame oil.:0"),
 
     # ================= 6. CHINESE JIANGNAN/HUAIYANG (5) =================
-    ("h01", "江南红烧狮子头", "Braised Lion's Head", "huaiyang", ["猪肉", "炖煮功夫"], 120, "高级", "Hard", "./images/generic_food.png",
+    ("h01", "江南红烧狮子头", "Braised Lion's Head", "huaiyang", ["猪肉", "炖煮功夫"], 120, "高级", "Hard", "./images/lions_head.png",
      "六分肥四分瘦五花肉:Fatty Pork Belly:500g|马蹄(荸荠)或藕:Water Chestnut:100g|葱姜水:Scallion Water:1碗",
      "细切粗剁:极其关键！将肉切成石榴籽大小的微小方块，再轻轻剁两下（不能剁成肉泥）。混合切碎的马蹄。:CRITICAL: Dice pork into micro cubes, DO NOT MINCE into paste. Mix with diced water chestnut.:0|打水上劲:肉中少量多次加入葱姜水搅打极其粘稠，加一点盐糊化，团成巨大的四个大肉丸，在两手间左右摔打至成团结实不散。:Whip scallion water iteratively into pork until ultra sticky. Form 4 giant meatballs tossing between hands.:0|油炸定型:巨大的肉圆入七成热深油中炸制表面结成焦黄硬定型外壳，捞出控油。:Deep fry meatballs till a firm golden outer crust forms holding shape.:300|慢火蒸或砂锅炖:砂锅底部垫大量白菜帮防御糊底。放入肉圆注入高汤加入生抽冰糖老抽八角等调料。微火慢炖2小时至入口即化！:Place in claypot on cabbage bed, add broth/spices, stew gently for 2 hours till literally melts.:7200"),
     ("h02", "松鼠桂鱼(平民简化版)", "Squirrel Fish (Simplified)", "huaiyang", ["海鲜", "酸甜大菜"], 40, "高级", "Hard", "./images/generic_food.png",
@@ -137,7 +137,7 @@ data = [
     ("h04", "西湖牛肉羹", "West Lake Beef Soup", "huaiyang", ["汤", "柔滑清淡"], 15, "入门", "Easy", "./images/generic_food.png",
      "牛肉泥:Minced Beef:150g|内酯嫩豆腐:Silken Tofu:半盒|香菜与蛋清:Cilantro & Egg Whites:适量",
      "细切洗净:牛肉必须剁得很细碎，洗去血水。嫩豆腐切极小颗粒。香菜切碎。:Mince beef heavily. Dice tofu micro small. Chop cilantro.:0|牛沫去腥:冷水下牛肉沫，逐渐加热水煮沸将深色血杂质全部撇干净，留下清汤。:Boil beef starting in cold water, skim absolutely all scum for clear broth.:300|滑豆腐:下豆腐粒稍微煮开。加盐白胡椒粉调个极其清淡的咸鲜底味。:Slide in tofu, season very lightly with salt and white pepper.:0|勾芡飘雪花蛋:用水淀粉淋入勾出相对浓厚的玻璃芡汁。关火！迅速淋入打散的纯蛋清，搅拌拉出雪白的云丝片片。出锅狂撒香菜碎！:Thicken broth with starch. OFF HEAT! Stream in egg whites while stirring to make white cloud ribbons.:0"),
-    ("h05", "苏式阳春面", "Yangchun Noodles", "huaiyang", ["面点", "清汤素面"], 5, "入门", "Easy", "./images/generic_food.png",
+    ("h05", "苏式阳春面", "Yangchun Noodles", "huaiyang", ["面点", "清汤素面"], 5, "入门", "Easy", "./images/noodles.png",
      "极细挂面或生切面:Thin Noodles:1把|猪油:Lard:1大勺（灵魂）|极品生抽及香葱末:High-End Soy Sauce & Scallion:适量",
      "炼猪油底:碗底挖一勺灵魂猪油！倒两勺最棒的特级生抽，撒满一大把极细嫩绿的葱花。:Add spoonful of Lard, premium soy sauce, and mass minced scallions to bottom of bowl.:0|煮面与冲汤:水大开，煮一把细如发丝的面。在面快熟时拿面汤大火冲进碗底（猪油瞬间融化芳香四溢）。:Boil thin noodles. Pour boiling starchy pasta water forcefully into the prepared bowl to melt lard.:0|折面:用长筷子将煮好的面整齐如梳子排列好，放入面碗里！:Fold cooked noodles neatly like a comb into the steaming broth.:0|品鉴:这碗面讲究“汤清如镜，面滑如丝，葱香扑鼻，不见一点肉确有脂香”。端起来尽情嗦即可。:Enjoy the ultimate minimal comfort bowl.:0")
 ]
