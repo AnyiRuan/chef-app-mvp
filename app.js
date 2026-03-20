@@ -111,7 +111,18 @@ function renderAppStrings() {
 document.addEventListener('DOMContentLoaded', () => {
     // We intentionally do NOT call switchScreen('home') automatically anymore 
     // to preserve the Welcome screen entry requirement!
-    document.getElementById('nav-home').addEventListener('click', () => switchScreen('home'));
+    document.getElementById('nav-home').addEventListener('click', () => {
+        if (currentScreen === 'home') {
+            currentCategory = 'all';
+            searchQuery = '';
+            document.getElementById('recipe-search').value = '';
+            document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+            document.querySelector('.chip[data-cat="all"]').classList.add('active');
+            renderHome();
+        } else {
+            switchScreen('home');
+        }
+    });
     document.getElementById('nav-cart').addEventListener('click', () => switchScreen('cart'));
 
     renderAppStrings();

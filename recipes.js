@@ -94,7 +94,7 @@ const recipesData_v2 = [
     "time": 20,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/mapo_tofu.png",
     "ingredients": [
       {
         "name_zh": "嫩豆腐",
@@ -162,7 +162,7 @@ const recipesData_v2 = [
     "time": 25,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/kung_pao_chicken.png",
     "ingredients": [
       {
         "name_zh": "鸡腿肉",
@@ -232,7 +232,7 @@ const recipesData_v2 = [
     "time": 20,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/steamed_sea_bass.png",
     "ingredients": [
       {
         "name_zh": "鲈鱼",
@@ -296,7 +296,7 @@ const recipesData_v2 = [
     "time": 20,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80",
+    "image": "./images/spaghetti_carbonara.png",
     "ingredients": [
       {
         "name_zh": "意面",
@@ -360,7 +360,7 @@ const recipesData_v2 = [
     "time": 15,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80",
+    "image": "./images/sirloin_steak.png",
     "ingredients": [
       {
         "name_zh": "西冷牛排",
@@ -427,7 +427,7 @@ const recipesData_v2 = [
     "time": 50,
     "difficulty_zh": "中级",
     "difficulty_en": "Medium",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/french_onion_soup.png",
     "ingredients": [
       {
         "name_zh": "黄洋葱",
@@ -480,9 +480,9 @@ const recipesData_v2 = [
   },
   {
     "id": "r_008",
-    "name_zh": "地道美味的粤菜海鲜 - 8",
-    "name_en": "Authentic Yue Dish - 8",
-    "cuisine": "yue",
+    "name_zh": "地道美味的鲁菜风味 - 8",
+    "name_en": "Authentic Lu Dish - 8",
+    "cuisine": "lu",
     "tags": [
       "美味",
       "快速",
@@ -492,7 +492,7 @@ const recipesData_v2 = [
     "time": 41,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",
@@ -518,19 +518,19 @@ const recipesData_v2 = [
   },
   {
     "id": "r_009",
-    "name_zh": "地道美味的意式风情 - 9",
-    "name_en": "Authentic Italian Dish - 9",
-    "cuisine": "italian",
+    "name_zh": "地道美味的川菜精选 - 9",
+    "name_en": "Authentic Sichuan Dish - 9",
+    "cuisine": "sichuan",
     "tags": [
       "美味",
       "快速",
       "delish",
       "fast"
     ],
-    "time": 20,
+    "time": 40,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",
@@ -556,19 +556,19 @@ const recipesData_v2 = [
   },
   {
     "id": "r_010",
-    "name_zh": "地道美味的淮扬名菜 - 10",
-    "name_en": "Authentic Huaiyang Dish - 10",
-    "cuisine": "huaiyang",
+    "name_zh": "地道美味的川菜精选 - 10",
+    "name_en": "Authentic Sichuan Dish - 10",
+    "cuisine": "sichuan",
     "tags": [
       "美味",
       "快速",
       "delish",
       "fast"
     ],
-    "time": 43,
+    "time": 26,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",
@@ -594,19 +594,19 @@ const recipesData_v2 = [
   },
   {
     "id": "r_011",
-    "name_zh": "地道美味的意式风情 - 11",
-    "name_en": "Authentic Italian Dish - 11",
-    "cuisine": "italian",
+    "name_zh": "地道美味的鲁菜风味 - 11",
+    "name_en": "Authentic Lu Dish - 11",
+    "cuisine": "lu",
     "tags": [
       "美味",
       "快速",
       "delish",
       "fast"
     ],
-    "time": 46,
+    "time": 41,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",
@@ -632,19 +632,19 @@ const recipesData_v2 = [
   },
   {
     "id": "r_012",
-    "name_zh": "地道美味的鲁菜风味 - 12",
-    "name_en": "Authentic Lu Dish - 12",
-    "cuisine": "lu",
+    "name_zh": "地道美味的浪漫法餐 - 12",
+    "name_en": "Authentic French Dish - 12",
+    "cuisine": "french",
     "tags": [
       "美味",
       "快速",
       "delish",
       "fast"
     ],
-    "time": 25,
+    "time": 33,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",
@@ -670,19 +670,19 @@ const recipesData_v2 = [
   },
   {
     "id": "r_013",
-    "name_zh": "地道美味的川菜精选 - 13",
-    "name_en": "Authentic Sichuan Dish - 13",
-    "cuisine": "sichuan",
+    "name_zh": "地道美味的鲁菜风味 - 13",
+    "name_en": "Authentic Lu Dish - 13",
+    "cuisine": "lu",
     "tags": [
       "美味",
       "快速",
       "delish",
       "fast"
     ],
-    "time": 23,
+    "time": 45,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",
@@ -717,10 +717,10 @@ const recipesData_v2 = [
       "delish",
       "fast"
     ],
-    "time": 35,
+    "time": 27,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",
@@ -755,10 +755,10 @@ const recipesData_v2 = [
       "delish",
       "fast"
     ],
-    "time": 45,
+    "time": 20,
     "difficulty_zh": "入门",
     "difficulty_en": "Easy",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "image": "./images/generic_food.png",
     "ingredients": [
       {
         "name_zh": "神秘食材",

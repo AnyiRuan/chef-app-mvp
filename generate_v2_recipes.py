@@ -35,7 +35,7 @@ recipes.append(create_recipe(
 
 recipes.append(create_recipe(
     "r_002", "麻婆豆腐", "Mapo Tofu", "sichuan", ["豆腐", "辣", "下饭", "tofu", "spicy"], 20, "入门", "Easy",
-    "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "./images/mapo_tofu.png",
     [{"name_zh":"嫩豆腐", "name_en":"Silken Tofu", "amount":"1块"}, {"name_zh":"牛肉沫", "name_en":"Minced Beef", "amount":"100g"}, {"name_zh":"郫县豆瓣酱", "name_en":"Pixian Bean Paste", "amount":"1.5勺"}],
     [
         {"action": "切配", "instruction_zh": "豆腐切2厘米小块。", "instruction_en": "Cut tofu into 2cm cubes.", "hasTimer": False},
@@ -48,7 +48,7 @@ recipes.append(create_recipe(
 
 recipes.append(create_recipe(
     "r_003", "宫保鸡丁", "Kung Pao Chicken", "sichuan", ["鸡肉", "花生", "酸甜", "chicken", "peanut"], 25, "中级", "Medium",
-    "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "./images/kung_pao_chicken.png",
     [{"name_zh":"鸡腿肉", "name_en":"Chicken Thigh", "amount":"300g"}, {"name_zh":"炸花生米", "name_en":"Fried Peanuts", "amount":"一把"}, {"name_zh":"干辣椒/花椒", "name_en":"Dried Chili/Peppercorn", "amount":"适量"}],
     [
         {"action": "切配", "instruction_zh": "鸡肉切丁，加生抽、料酒、淀粉抓匀腌制10分钟。", "instruction_en": "Dice chicken, marinate with soy sauce, wine, starch for 10 mins.", "hasTimer": True, "timeSeconds": 600, "hasParallel":True, "parallelTask_zh": "调一个宫保汁（糖醋酱油水地瓜粉）。", "parallelTask_en":"Mix Kung Pao sauce (sugar, vinegar, soy sauce, starch)."},
@@ -62,7 +62,7 @@ recipes.append(create_recipe(
 # 2. Yue (粤菜)
 recipes.append(create_recipe(
     "r_004", "清蒸鲈鱼", "Steamed Sea Bass", "yue", ["海鲜", "清淡", "蒸", "seafood", "steamed"], 20, "入门", "Easy",
-    "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "./images/steamed_sea_bass.png",
     [{"name_zh":"鲈鱼", "name_en":"Sea Bass", "amount":"1条(约500g)"}, {"name_zh":"蒸鱼豉油", "name_en":"Seasoned Soy Sauce", "amount":"3勺"}, {"name_zh":"葱姜丝", "name_en":"Scallion & Ginger", "amount":"一把"}],
     [
         {"action": "切配", "instruction_zh": "鱼身划刀，盘底和鱼腹塞入姜片葱段。", "instruction_en": "Score fish, stuff ginger and scallion into belly and under it.", "hasTimer": False},
@@ -75,7 +75,7 @@ recipes.append(create_recipe(
 # 3. Italian (意餐)
 recipes.append(create_recipe(
     "r_005", "经典培根蛋酱意面", "Classic Spaghetti Carbonara", "italian", ["意面", "奶香", "西餐", "pasta", "bacon"], 20, "入门", "Easy",
-    "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80",
+    "./images/spaghetti_carbonara.png",
     [{"name_zh":"意面", "name_en":"Spaghetti", "amount":"200g"}, {"name_zh":"培根/风干猪颊肉", "name_en":"Pancetta/Bacon", "amount":"100g"}, {"name_zh":"帕玛森干酪及蛋黄", "name_en":"Parmesan & Egg Yolks", "amount":"适量"}],
     [
         {"action": "煮", "instruction_zh": "海盐水中煮意面，比包装建议少煮1分钟以保持咬劲。", "instruction_en": "Boil pasta in salted water 1 min less than package instructions.", "hasTimer": True, "timeSeconds": 480, "hasParallel": True, "parallelTask_zh": "把蛋黄、全蛋、大量黑胡椒和擦碎的奶酪打匀成酱汁。", "parallelTask_en": "Whisk egg yolks, whole egg, black pepper, and grated cheese."},
@@ -87,7 +87,7 @@ recipes.append(create_recipe(
 
 recipes.append(create_recipe(
     "r_006", "西式香煎西冷牛排配芦笋", "Pan-Seared Sirloin Steak", "italian", ["牛排", "高蛋白", "西式", "steak", "meat"], 15, "中级", "Medium",
-    "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80",
+    "./images/sirloin_steak.png",
     [{"name_zh":"西冷牛排", "name_en":"Sirloin Steak", "amount":"1块(厚2.5cm)"}, {"name_zh":"黄油", "name_en":"Butter", "amount":"20g"}, {"name_zh":"大蒜及迷迭香", "name_en":"Garlic & Rosemary", "amount":"少许"}],
     [
         {"action": "静置", "instruction_zh": "牛排提前30分钟回温，用厨房纸吸干表面水分，撒海盐和黑胡椒。", "instruction_en": "Rest steak to room temp for 30 mins, pat dry, season with salt/pepper.", "hasTimer": True, "timeSeconds": 1800, "hasParallel": True, "parallelTask_zh": "清洗芦笋并切去老根，准备大蒜粒。", "parallelTask_en": "Wash asparagus, trim ends, prep garlic."},
@@ -100,7 +100,7 @@ recipes.append(create_recipe(
 # 4. French (法餐)
 recipes.append(create_recipe(
     "r_007", "法式洋葱汤", "French Onion Soup", "french", ["法餐", "汤", "经典", "soup", "french"], 50, "中级", "Medium",
-    "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+    "./images/french_onion_soup.png",
     [{"name_zh":"黄洋葱", "name_en":"Yellow Onions", "amount":"4个"}, {"name_zh":"牛肉高汤", "name_en":"Beef Broth", "amount":"800ml"}, {"name_zh":"法棍及芝士", "name_en":"Baguette & Gruyere", "amount":"适量"}],
     [
         {"action": "切配", "instruction_zh": "洋葱切成细丝。", "instruction_en": "Slice onions thinly.", "hasTimer": False},
@@ -125,7 +125,7 @@ for i in range(8, 16):
         ["美味", "快速", "delish", "fast"],
         20 + random.randint(0, 30),
         "入门", "Easy",
-        "https://images.unsplash.com/photo-1556910103-1c02745a872f?w=600&q=80",
+        "./images/generic_food.png",
         [{"name_zh":"神秘食材", "name_en":"Mystery Ingredient", "amount":"少许"}],
         [
             {"action": "准备", "instruction_zh": "将所有食材备好。", "instruction_en": "Prepare all ingredients.", "hasTimer": False},
